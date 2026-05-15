@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Menu from './components/Menu';
 import './App.css'
 import Home from './components/Home';
+import Projects from './components/Projects';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <>
       <Menu />
       <Home />
-      <div></div>
+      <Projects />
       <div></div>
     </>
   )
