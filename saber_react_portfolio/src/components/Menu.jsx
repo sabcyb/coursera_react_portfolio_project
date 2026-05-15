@@ -10,6 +10,8 @@ import {
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = React.useRef(0);
 
   const navLinks = [
     { name: "Home", href: "#home" },
@@ -17,9 +19,25 @@ export default function Menu() {
     { name: "Contact", href: "#contact" },
   ];
 
-  // Handle smooth scroll and active section detection
+  // Handle scroll direction and active section detection
   useEffect(() => {
     const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Show menu at the top of the page
+      if (currentScrollY < 100) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY.current) {
+        // Scrolling down
+        setIsVisible(false);
+      } else {
+        // Scrolling up
+        setIsVisible(true);
+      }
+      
+      lastScrollY.current = currentScrollY;
+
+      // Active section detection
       const sections = ["home", "projects", "contact"];
       for (let section of sections) {
         const element = document.getElementById(section);
@@ -48,7 +66,9 @@ export default function Menu() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full px-4 py-0 z-50">
+    <nav className={`fixed top-0 left-0 w-full px-4 py-0 z-50 transition-all duration-300 ${
+      isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+    }`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-slate-800 bg-slate-950/95 px-6 py-4 shadow-2xl backdrop-blur-lg transition-all duration-300">
         
         {/* Left Side - Social Icons */}
