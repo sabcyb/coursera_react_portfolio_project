@@ -17,7 +17,7 @@ export default function Menu() {
   ];
 
   return (
-    <nav className="w-full px-4 py-5">
+    <nav className="fixed top-0 left-0 w-full px-4 py-5 z-50">
       <div className="mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-slate-800 bg-slate-950/95 px-6 py-4 shadow-2xl backdrop-blur-lg">
         
         {/* Left Side - Social Icons */}

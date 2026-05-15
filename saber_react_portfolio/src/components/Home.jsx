@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="w-full px-4 py-10"
+      className="w-full px-4 py-10 pt-32"
     >
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 rounded-3xl border border-slate-800 bg-slate-950/95 p-8 shadow-2xl backdrop-blur-lg md:flex-row md:items-center md:justify-between md:p-12">
         
