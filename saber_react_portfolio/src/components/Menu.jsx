@@ -92,7 +92,7 @@ export default function Menu() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/saberahmedham/"
+            href="https://www.linkedin.com/saberahmedham"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900 text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-slate-800 hover:text-cyan-300"
