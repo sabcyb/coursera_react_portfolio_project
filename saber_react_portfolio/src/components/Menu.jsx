@@ -74,7 +74,7 @@ export default function Menu() {
         {/* Left Side - Social Icons */}
         <div className="flex items-center gap-3">
           <a
-            href="https://www.facebook.com/saber.ghazal.7"
+            href="https://www.facebook.com/saber.a.msr"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900 text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-slate-800 hover:text-cyan-300"
@@ -83,7 +83,7 @@ export default function Menu() {
           </a>
 
           <a
-            href="https://github.com/saberghazal"
+            href="https://github.com/sabcyb"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900 text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-slate-800 hover:text-cyan-300"
@@ -92,7 +92,7 @@ export default function Menu() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/saber-ghazal-9b1a4b1b2/"
+            href="https://www.linkedin.com/in/saberahmedham/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900 text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-slate-800 hover:text-cyan-300"
