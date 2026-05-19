@@ -1,28 +1,33 @@
+import project1 from "../assets/images/project1.jpg";
+import project2 from "../assets/images/project2.png";
+import project3 from "../assets/images/project3.png";
+import project4 from "../assets/images/project4.png";
+
 export default function Projects() {
   const projects = [
     {
       id: 1,
       title: "E-Commerce Platform",
       description: "A full-stack e-commerce solution built with React and Node.js, featuring product catalog, shopping cart, secure checkout, and payment integration with Stripe.",
-      image: "/src/assets/images/project1.jpg",
+      image: project1,
     },
     {
       id: 2,
       title: "Task Management App",
       description: "A collaborative task management application with real-time updates, user authentication, drag-and-drop functionality, and team workspace organization using React and Firebase.",
-      image: "/src/assets/images/project2.png",
+      image: project2,
     },
     {
       id: 3,
       title: "Weather Dashboard",
       description: "An interactive weather dashboard displaying real-time weather data, forecasts, and historical analytics. Built with React, integrating OpenWeather API with beautiful data visualizations.",
-      image: "/src/assets/images/project3.png",
+      image: project3,
     },
     {
       id: 4,
       title: "Social Media Analytics",
       description: "A data analytics dashboard for social media metrics including engagement tracking, performance reports, and audience insights. Features interactive charts and customizable dashboards.",
-      image: "/src/assets/images/project4.png",
+      image: project4,
     },
   ];
 
