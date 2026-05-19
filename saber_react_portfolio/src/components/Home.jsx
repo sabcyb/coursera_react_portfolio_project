@@ -13,7 +13,7 @@ export default function Home() {
             <div className="absolute inset-0 rounded-full bg-cyan-400/20 blur-2xl transition-all duration-500 group-hover:bg-cyan-400/30"></div>
 
             <img
-              src="/src/assets/images/person.jpg"
+              src="./src/assets/images/person.jpg"
               alt="Profile"
               className="relative h-64 w-64 rounded-full border-4 border-cyan-400 object-cover shadow-[0_0_40px_rgba(34,211,238,0.25)] transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_0_60px_rgba(34,211,238,0.45)]"
             />
